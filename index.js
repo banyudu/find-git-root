@@ -14,7 +14,15 @@ function findGitRoot(start) {
   }
   start.pop()
   var dir = start.join(path.sep)
-  if (fs.existsSync(path.join(dir, '.git'))) {
+  var fullPath = path.join(dir, '.git')
+  if (fs.existsSync(fullPath)) {
+      if(!fs.lstatSync(fullPath).isDirectory()) {
+      var content = fs.readFileSync(fullPath, { encoding: 'utf-8' })
+      var match = /^gitdir: (.*)\s*$/.exec(content)
+      if (match) {
+        return path.normalize(match[1])
+      }
+    }
     return path.normalize(dir)
   } else {
     return findGitRoot(start)
