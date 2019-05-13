@@ -23,7 +23,7 @@ function findGitRoot(start) {
         return path.normalize(match[1])
       }
     }
-    return path.normalize(dir)
+    return path.normalize(fullPath)
   } else {
     return findGitRoot(start)
   }
