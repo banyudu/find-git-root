@@ -5,7 +5,7 @@ const findGitRoot = require('..')
 const path = require('path')
 
 describe('findGitRoot', () => {
-  const root = path.normalize(path.join(__dirname, '..'))
+  const root = path.normalize(path.join(__dirname, '..', '.git'))
   it('Should be ok when start with a file', () => {
     assert.equal(findGitRoot(__filename), root)
   })
