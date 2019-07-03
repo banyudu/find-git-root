@@ -1,6 +1,6 @@
 {
   "name": "find-git-root",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "recursively find the closest .git/",
   "main": "index.js",
   "scripts": {
