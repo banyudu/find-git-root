@@ -1,0 +1,5 @@
+// @flow
+
+declare module 'find-git-root' {
+  declare export default function findGitRoot(start?: string): string;
+}
