@@ -1,0 +1,4 @@
+// @flow
+
+declare function findGitRoot(start?: string): string;
+declare module.exports: typeof findGitRoot;
