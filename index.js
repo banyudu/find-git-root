@@ -7,6 +7,7 @@ function findGitRoot(start) {
     if (start[start.length - 1] !== path.sep) {
       start += path.sep
     }
+    start = path.normalize(start)
     start = start.split(path.sep)
   }
   if (!start.length) {
