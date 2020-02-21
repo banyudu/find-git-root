@@ -16,4 +16,9 @@ describe('findGitRoot', () => {
     assert.equal(findGitRoot(), root)
     assert.equal(findGitRoot(null), root)
   })
+  if (process.platform === 'win32') {
+    it('Should be ok handling POSIX delimiters on Windows', () => {
+        assert.equal(findGitRoot(__filename.replace(/\\/g, path.posix.sep)), root)
+    })
+  }
 })
