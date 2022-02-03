@@ -1,13 +1,17 @@
 # find-git-root
-Recursively find the closest `.git/` and return repo path
 
-# Installation
+[![Shields Badge](https://img.shields.io/npm/dw/find-git-root.svg)](https://npmjs.com/package/find-git-root)
+
+Recursively find the closest `.git/` and return repo path, support git worktree.
+
+## Installation
 
 ```bash
-$ npm install find-git-root
+npm install find-git-root
 ```
 
-# Usage
+## Usage
+
 ```javascript
 'use strict'
 
