@@ -24,6 +24,9 @@
     "url": "https://github.com/banyudu/find-git-root/issues"
   },
   "homepage": "https://github.com/banyudu/find-git-root#readme",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
   "devDependencies": {
     "mocha": "^11.3.0",
     "power-assert": "^1.4.2"
