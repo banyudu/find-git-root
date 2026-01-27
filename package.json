@@ -25,7 +25,7 @@
   },
   "homepage": "https://github.com/banyudu/find-git-root#readme",
   "devDependencies": {
-    "mocha": "^7.1.1",
+    "mocha": "^11.3.0",
     "power-assert": "^1.4.2"
   }
 }
